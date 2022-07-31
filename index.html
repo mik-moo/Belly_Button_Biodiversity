@@ -9,25 +9,44 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
-<body>
+<body style = "background-color: rgb(157, 174, 228);">
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
+      <div class="col-md-12 jumbotron text-center" style="background-image: url(https://images.unsplash.com/photo-1579781354171-45f67f0d8f18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80); background-size: 80%; color: whitesmoke">
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
+    
+    <div class= "container-fluid">
+      <div class = "row">
+          <div class="display-4 text-center" >
+              <h3 style="color:black;">Bacteria to Beef? <br><small style="color:black">Research May Tell Us</small></h3>
+          </div>
+          <div class="col-md-12">
+              <p>
+                  Research is under way to discover and document potentially unknown bacteria that could synthesize proteins for the production of synthetic beef.  Previously, meat has been
+                  synthesized from algae, fungi, and plant root microorganisms.  The company, Improbable Beef, is looking for bacteria that may synthesize proteins that taste more like beef than previous attempts. 
+                  After researching bacteria, they think that the one they need may be found on the human body, specifically in the belly button area. This dashboard will let you explore the various
+                  species found on the donors. <br><br>
+
+              </p>
+          </div>
+      </div>
+  </div>
+    
+    
     <div class="row">
       <div class="col-md-2">
-        <div class="well">
+        <div class="well" style="background-color: white;">
           <h5>Test Subject ID No.:</h5>
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
+        <div class="panel panel-primary; height= 100%;">
+          <div class="panel-heading;"style = "background-color: darkslateblue;" >
+            <h3 class="panel-title;" style = "background-color: darkslateblue; color: whitesmoke; text-align: center; font-size: large;">Demographic Info</h3>
           </div>
           <div id="sample-metadata" class="panel-body"></div>
         </div>
@@ -39,9 +58,9 @@
         <div id="gauge"></div>
       </div>
     </div>
-    <div class="row">
+    <div class="row" style= "margin-top: 50px;">
       <div class="col-md-12">
-        <div id="bubble"></div>
+        <div id="bubble" style="width: 100%;"></div>
       </div>
     </div>
   </div>
